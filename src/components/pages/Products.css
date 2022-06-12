@@ -1,0 +1,183 @@
+#invisible {
+    display: none;
+}
+
+#mobile-title {
+    display: none;
+}
+
+.size-chart-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.chart-image {
+    background-image: url('D:/webDev/react/goldenshoe/src/images/sizechart.jpg');
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 40%;
+}
+
+
+.size-chart {
+    margin-top: 0.5rem;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.disable-button {
+    pointer-events: none;
+    color: darkred;
+    display: none;
+}
+
+.products-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.products-info h1 {
+    font-size: 4rem;
+    font-family: 'Nunito', sans-serif;
+    color: #2c2c54;
+    text-align: start;
+}
+.products-info h2 {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.products-info {
+    display: flex;
+    flex-direction: column;
+      
+    color: #666;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+#size-select {
+    width: 50%;
+    
+    margin: 1rem 0;
+}
+
+.shoe-products {
+    display: flex;
+    width: 50vw;
+}
+
+
+.small-products {
+    width: 20%;
+    
+}
+
+.small-products img:hover {
+    border: 1px solid black;
+}
+
+.small-products img {
+    width: 80%;
+    
+}
+
+
+.large-product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+   
+}
+
+
+#product-chevron-left {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+
+}
+
+#product-chevron-left:hover {
+    background-color: white;
+    color: black;
+}
+#product-chevron-right {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+
+}
+
+#product-chevron-right:hover {
+    background-color: white;
+    color: black;
+}
+
+.large-product img{
+    
+    width: 80%;
+   
+    
+}
+
+
+.btn-mobile {
+    width: fit-content;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .products-container {
+        flex-direction: column;
+    }
+
+    .shoe-products {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .large-product {
+        justify-content: center;
+    }
+
+    .small-products {
+        display: none;
+    }
+
+    #desktop-title {
+        display: none;
+      }  
+
+    #mobile-title {
+        font-size: 4rem;
+        font-family: 'Nunito', sans-serif;
+        color: #2c2c54;
+        text-align: center;
+    }
+
+    .chart-image {
+        background-image: url('D:/webDev/react/goldenshoe/src/images/sizechartmobile.jpg');
+        width: 90%;
+        height: 90%;
+    }
+}
+
